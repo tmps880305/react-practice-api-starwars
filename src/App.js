@@ -10,7 +10,7 @@ function App() {
 
     const {isLoading, error, sendRequest: fetchMovieHandler} = useHttp();
 
-    useEffect(() => {
+    const fetchData = () => {
         const requestMoviesConfig = {url: 'https://react-http-aa7a6-default-rtdb.firebaseio.com/movie.json'};
         const transformMovies = (moviesObj) => {
             const loadMovies = [];
@@ -25,12 +25,17 @@ function App() {
             setMovies(loadMovies);
         };
         fetchMovieHandler(requestMoviesConfig, transformMovies);
+    };
+
+    useEffect(() => {
+        fetchData();
     }, []);
 
 
     const addMovieHandler = () => {
-        console.log('Add Success');
+        fetchData();
     };
+
 
     let content = <p>Found no movies.</p>;
     if (error) {
@@ -49,7 +54,7 @@ function App() {
                 <NewMovie onNewMovie={addMovieHandler}/>
             </section>
             <section>
-                <button onClick={fetchMovieHandler}>Fetch Movies</button>
+                <button onClick={fetchData}>Fetch Movies</button>
             </section>
             <section>
                 {content}

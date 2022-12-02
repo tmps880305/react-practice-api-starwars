@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1075e65-38b7-471e-8a14-5a44a903e50e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/NewMovie.js" afterDir="false" />
+    <list default="true" id="e1075e65-38b7-471e-8a14-5a44a903e50e" name="Default Changelist" comment="Section 15-194: Using the custom http hook in components&#10;1. Fix bug of not clearing the form&#10;2. Fix bug of button not working&#10;3. Adding auto refresh data after submitting the form&#10;** Practice section complete **">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks/use-http.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/use-http.js" afterDir="false" />
@@ -18,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+            <state relative-caret-position="197">
+              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -28,22 +27,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/NewMovie.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/AddMovie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+            <state relative-caret-position="483">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -54,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hooks/use-http.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="340">
+              <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -77,8 +64,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/components/MoviesList.js" />
         <option value="$PROJECT_DIR$/src/components/NewMovieForm.js" />
-        <option value="$PROJECT_DIR$/src/components/AddMovie.js" />
         <option value="$PROJECT_DIR$/src/components/NewMovie.js" />
+        <option value="$PROJECT_DIR$/src/components/AddMovie.js" />
         <option value="$PROJECT_DIR$/src/hooks/use-http.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
       </list>
@@ -230,16 +217,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14237000" />
+    <option name="totallyTimeSpent" value="16092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1682641" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.3291536" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -250,7 +239,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3291536" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3291536" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -273,7 +262,8 @@
     <MESSAGE value="Sending a POST request" />
     <MESSAGE value="Create Custom hook (useHttp) for HTTP requests&#10;1. Change the GET part" />
     <MESSAGE value="Use useCallback and prevent infinite loop.&#10;(use trick of sending parameters to the inside function to reduce dependencies.)&#10;&#10;Alternative way see Scetion 15-193" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use useCallback and prevent infinite loop.&#10;(use trick of sending parameters to the inside function to reduce dependencies.)&#10;&#10;Alternative way see Scetion 15-193" />
+    <MESSAGE value="Section 15-194: Using the custom http hook in components&#10;1. Fix bug of not clearing the form&#10;2. Fix bug of button not working&#10;3. Adding auto refresh data after submitting the form&#10;** Practice section complete **" />
+    <option name="LAST_COMMIT_MESSAGE" value="Section 15-194: Using the custom http hook in components&#10;1. Fix bug of not clearing the form&#10;2. Fix bug of button not working&#10;3. Adding auto refresh data after submitting the form&#10;** Practice section complete **" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/MoviesList.js">
@@ -296,23 +286,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NewMovieForm.js" />
-    <entry file="file://$PROJECT_DIR$/src/hooks/use-http.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AddMovie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NewMovie.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -323,10 +296,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AddMovie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hooks/use-http.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+        <state relative-caret-position="197">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
