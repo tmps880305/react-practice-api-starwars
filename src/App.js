@@ -1,18 +1,17 @@
 import React, {useState, useEffect} from 'react';
 
 import MoviesList from './components/MoviesList';
-import AddMovie from './components/AddMovie'
+import NewMovie from './components/NewMovie';
 import useHttp from './hooks/use-http';
 import './App.css';
 
 function App() {
     const [movies, setMovies] = useState([]);
 
-
     const {isLoading, error, sendRequest: fetchMovieHandler} = useHttp();
 
     useEffect(() => {
-        const requestMovieConfig = {url: 'https://react-http-aa7a6-default-rtdb.firebaseio.com/movie.json'};
+        const requestMoviesConfig = {url: 'https://react-http-aa7a6-default-rtdb.firebaseio.com/movie.json'};
         const transformMovies = (moviesObj) => {
             const loadMovies = [];
             for (const key in moviesObj) {
@@ -25,21 +24,12 @@ function App() {
             }
             setMovies(loadMovies);
         };
-        fetchMovieHandler(requestMovieConfig, transformMovies);
+        fetchMovieHandler(requestMoviesConfig, transformMovies);
     }, []);
 
 
-    const addMovieHandler = async (movie) => {
-        const response = await fetch('https://react-http-aa7a6-default-rtdb.firebaseio.com/movie.json', {
-            method: 'POST',
-            body: JSON.stringify(movie),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
-
-        const data = response.json();
-        console.log(data);
+    const addMovieHandler = () => {
+        console.log('Add Success');
     };
 
     let content = <p>Found no movies.</p>;
@@ -56,7 +46,7 @@ function App() {
     return (
         <React.Fragment>
             <section>
-                <AddMovie onAddMovie={addMovieHandler}/>
+                <NewMovie onNewMovie={addMovieHandler}/>
             </section>
             <section>
                 <button onClick={fetchMovieHandler}>Fetch Movies</button>

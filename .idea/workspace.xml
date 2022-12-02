@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1075e65-38b7-471e-8a14-5a44a903e50e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/NewMovie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks/use-http.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/use-http.js" afterDir="false" />
@@ -17,10 +18,34 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="450">
+              <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding>
-                <element signature="e#0#62#0" expanded="true" />
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/NewMovie.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/AddMovie.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -29,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hooks/use-http.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+            <state relative-caret-position="132">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -51,6 +76,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/components/MoviesList.js" />
+        <option value="$PROJECT_DIR$/src/components/NewMovieForm.js" />
+        <option value="$PROJECT_DIR$/src/components/AddMovie.js" />
+        <option value="$PROJECT_DIR$/src/components/NewMovie.js" />
         <option value="$PROJECT_DIR$/src/hooks/use-http.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
       </list>
@@ -67,6 +95,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -95,7 +124,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -132,7 +160,8 @@
       <updated>1669949143932</updated>
       <workItem from="1669949145263" duration="3095000" />
       <workItem from="1669953640229" duration="128000" />
-      <workItem from="1669957228787" duration="5875000" />
+      <workItem from="1669957228787" duration="9814000" />
+      <workItem from="1670009052688" duration="1200000" />
     </task>
     <task id="LOCAL-00001" summary="Fetch data from swapi">
       <created>1669950777436</created>
@@ -183,17 +212,30 @@
       <option name="project" value="LOCAL" />
       <updated>1669961986355</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Create Custom hook (useHttp) for HTTP requests&#10;1. Change the GET part">
+      <created>1669966350090</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669966350090</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Use useCallback and prevent infinite loop.&#10;(use trick of sending parameters to the inside function to reduce dependencies.)&#10;&#10;Alternative way see Scetion 15-193">
+      <created>1669967172726</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669967172726</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9098000" />
+    <option name="totallyTimeSpent" value="14237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1682641" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -208,7 +250,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3291536" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3291536" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -229,7 +271,9 @@
     <MESSAGE value="Handling HTTP Errors" />
     <MESSAGE value="Automatically load and reload data by using useEffect/useCallback" />
     <MESSAGE value="Sending a POST request" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sending a POST request" />
+    <MESSAGE value="Create Custom hook (useHttp) for HTTP requests&#10;1. Change the GET part" />
+    <MESSAGE value="Use useCallback and prevent infinite loop.&#10;(use trick of sending parameters to the inside function to reduce dependencies.)&#10;&#10;Alternative way see Scetion 15-193" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use useCallback and prevent infinite loop.&#10;(use trick of sending parameters to the inside function to reduce dependencies.)&#10;&#10;Alternative way see Scetion 15-193" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/MoviesList.js">
@@ -251,19 +295,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NewMovieForm.js" />
     <entry file="file://$PROJECT_DIR$/src/hooks/use-http.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        <state relative-caret-position="132">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AddMovie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NewMovie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="450">
+          <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
           <folding>
-            <element signature="e#0#62#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>

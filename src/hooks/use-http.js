@@ -4,14 +4,14 @@ const useHttp = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
 
-    const sendRequest = useCallback(async (httpRequestConfig, applyData) => {
+    const sendRequest = async (httpRequestConfig, applyData) => {
         setIsLoading(true);
         setError(null);
         try {
             const response = await fetch(httpRequestConfig.url, {
                 method: httpRequestConfig.method ? httpRequestConfig.method : 'GET',
                 headers: httpRequestConfig.headers ? httpRequestConfig.headers : {},
-                body: httpRequestConfig.body ? httpRequestConfig.body : null
+                body: httpRequestConfig.body ? JSON.stringify(httpRequestConfig.body) : null
             });
 
             if (!response.ok) {
@@ -25,7 +25,7 @@ const useHttp = () => {
             setError(error.message || 'Something went wrong.');
         }
         setIsLoading(false);
-    }, []);
+    };
 
     return {
         isLoading,
